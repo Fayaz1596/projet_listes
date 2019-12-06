@@ -1,0 +1,9 @@
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col-12">
+            <div *ngFor="let biere of bieres" class="mt-2 pb-1 text-center">
+                <a class="text-decoration-none text-light" [routerLink]="['/beers', biere.id]">{{ biere.name }}</a>
+            </div>
+        </div>
+    </div>
+</div>

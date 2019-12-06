@@ -1,0 +1,15 @@
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div *ngFor="let film of liste" class="cadre col-lg-4 col-sm-6 col-12 p-0 mt-3 mb-3">
+            <img src="https://image.tmdb.org/t/p/w500{{ film.backdrop_path }}" class="image h-auto d-block">
+            <a class="text-decoration-none">
+            <div class="overlay">
+                <div class="text">
+                    <h5 class="text-center">{{ film.title }}</h5> <br>
+                    <p>{{ film.overview }}</p>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
